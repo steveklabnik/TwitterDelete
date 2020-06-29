@@ -24,7 +24,7 @@ jobs:
         bundle install --jobs 4 --retry 3
 
     - name: Run TwitterDelete
-      run: bundle exec twitter_delete.rb --force
+      run: bundle exec twitter_delete.rb
       env:
         TWITTER_USER: ${{ secrets.TWITTER_USER }}
         TWITTER_DAYS: ${{ secrets.TWITTER_DAYS }}
