@@ -1,4 +1,4 @@
-name: Scheduled
+name: Daily
 on:
   pull_request:
     paths:
