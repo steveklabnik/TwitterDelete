@@ -1,8 +1,11 @@
 name: Daily
 on:
-  push:
-    branches: master
-  pull_request: []
+  pull_request:
+    paths:
+      - .github/workflows/scheduled.yml
+  schedule:
+    # Once every day
+    - cron:  '0 0 * * *'
 jobs:
   delete:
     runs-on: ubuntu-latest
