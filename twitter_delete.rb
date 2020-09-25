@@ -5,7 +5,7 @@ require "dotenv"
 require "optimist"
 require "twitter"
 
-MAX_API_TWEETS = 13200
+MAX_API_TWEETS = 3200
 MAX_TWEETS_PER_PAGE = 200.0
 MAX_TWEETS_PER_REQUEST = 100
 MAX_LIKES_PER_PAGE = 100.0
